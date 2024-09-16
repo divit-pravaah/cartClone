@@ -70,7 +70,7 @@ function clearCart() {
 
 function updateCartTotal() {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  totalPriceElement.innerText = `Total : $${total.toFixed(2)}`;
+  totalPriceElement.innerText = `Total : $${parseFloat(total).toFixed(2)}`;
 }
 
 function inputQtyUpdate(id) {
